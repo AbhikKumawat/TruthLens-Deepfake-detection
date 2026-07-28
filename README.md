@@ -1,10 +1,10 @@
-# TruthLens 🛡️
+# TruthLens 
 
-**TruthLens** is an advanced, enterprise-grade AI Video Authenticity & Deepfake Detection SaaS platform. It leverages state-of-the-art computer vision and machine learning models to detect face swaps, lip-sync anomalies, and voice cloning, providing users with a comprehensive authenticity score and downloadable verification reports.
+TruthLens** is an advanced, enterprise-grade AI Video Authenticity & Deepfake Detection SaaS platform. It leverages state-of-the-art computer vision and machine learning models to detect face swaps, lip-sync anomalies, and voice cloning, providing users with a comprehensive authenticity score and downloadable verification reports.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Deepfake Detection:** Analyzes videos for face swaps, lip-sync anomalies, and voice manipulation.
 *   **Frame-by-Frame Analysis:** Performs deep inspection of micro-inconsistencies missed by the human eye.
@@ -15,7 +15,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 *   **Framework:** [Next.js 14](https://nextjs.org/) (React 18, App Router, TypeScript)
@@ -31,7 +31,7 @@
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 Truthified/
@@ -50,7 +50,7 @@ Truthified/
 
 ---
 
-## 🏃 Getting Started & How to Run
+##  Getting Started & How to Run
 
 To run the complete **TruthLens** application, both the frontend and backend services must be running concurrently. You can run them either **locally (for development)** or using **Docker/Docker Compose**.
 
@@ -61,7 +61,7 @@ To run the complete **TruthLens** application, both the frontend and backend ser
 
 ---
 
-### 💻 Option 1: Running Locally (Recommended for Development)
+###  Option 1: Running Locally (Recommended for Development)
 
 You will need to open **two separate terminal windows/sessions**: one for the backend and one for the frontend.
 
@@ -112,7 +112,7 @@ You will need to open **two separate terminal windows/sessions**: one for the ba
 
 ---
 
-### 🐳 Option 2: Running with Docker Compose (Easiest Container Setup)
+###  Option 2: Running with Docker Compose (Easiest Container Setup)
 
 We have provided a root-level `docker-compose.yml` to launch both the frontend and backend with a single command.
 
@@ -127,7 +127,7 @@ We have provided a root-level `docker-compose.yml` to launch both the frontend a
 
 ---
 
-### 📦 Option 3: Running Individual Docker Containers
+###  Option 3: Running Individual Docker Containers
 
 If you prefer to build and run individual Docker containers manually:
 
@@ -147,7 +147,4 @@ docker run -p 3000:3000 truthlens-frontend
 
 ---
 
-## 📚 Documentation
-For deep technical details, refer to the following documents in the root directory:
-*   [Tech Stack Overview](file:///c:/Users/Abhik%20Kumawat/OneDrive/Desktop/Truthified/TruthLens_Features_and_Tech_Stack.pdf)
-*   [System Architecture Report](file:///c:/Users/Abhik%20Kumawat/OneDrive/Desktop/Truthified/TruthLens_System_Architecture_Report.pdf)
+
