@@ -1,13 +1,4 @@
-"""
-HuggingFace AI Video/Image Detector
-===================================
 
-Uses:
-    umm-maybe/AI-image-detector
-
-Install:
-    pip install transformers torch pillow
-"""
 
 import numpy as np
 from typing import Tuple
@@ -16,7 +7,7 @@ from transformers import pipeline as hf_pipeline
 from PIL import Image
 import torch
 
-# Load the model once when this module is imported
+
 _classifier = hf_pipeline(
     task="image-classification",
     model="umm-maybe/AI-image-detector",
@@ -52,18 +43,14 @@ def classify_frame(frame_rgb: np.ndarray) -> Tuple[str, float]:
     # Convert NumPy array to PIL image
     image = Image.fromarray(frame_rgb)
 
-    # Resize large images for faster inference
+   
     if max(image.size) > 512:
         image.thumbnail((512, 512), Image.Resampling.LANCZOS)
 
-    # Run the Hugging Face model
+   
     results = _classifier(image)
 
-    # Example output:
-    # [
-    #     {'label': 'artificial', 'score': 0.98},
-    #     {'label': 'human', 'score': 0.02}
-    # ]
+
 
     best = results[0]
 
